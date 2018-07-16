@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="3dp">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:layout_margin="3dp"
+        android:layout_gravity="center"
+        card_view:cardBackgroundColor="@color/colorPrimary"
+        card_view:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tx_id_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_alignParentTop="true"
+                android:text="idcard"
+                android:textColor="@color/colorAccent"
+                android:textSize="19sp" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_below="@id/tx_id_card"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white">
+
+            </View>
+
+            <TextView
+                android:id="@+id/tx_name"
+                android:layout_below="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="name"
+                android:textSize="19sp" />
+
+
+            <TextView
+                android:id="@+id/tx_number"
+                android:layout_below="@+id/tx_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:gravity="right"
+                android:textColor="@color/white"
+                android:text="number"
+                android:textSize="19sp" />
+
+
+            <ImageView
+                android:id="@+id/im_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"/>
+
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
