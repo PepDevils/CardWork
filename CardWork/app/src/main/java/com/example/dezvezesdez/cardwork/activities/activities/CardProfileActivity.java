@@ -59,8 +59,6 @@ public class CardProfileActivity extends AppCompatActivity {
 
     private boolean GetIntent() {
 
-        int aa = 12;
-
         Intent i = getIntent();
 
         if (i.getParcelableArrayListExtra("cards") != null) {
